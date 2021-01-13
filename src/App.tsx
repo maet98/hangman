@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NewWord from "./components/new_word"
+import Letter from "./components/Letters"
+import HangMan from "./components/HangMan"
 
 function App() {
+    const [count,setCount] = React.useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <NewWord />
+        <Letter letter={'a'} />
+        <HangMan mistakes={count} />
+        <button onClick={() => setCount(count+1)}>+</button>
+        <button onClick={() => setCount(Math.max(0,count-1))}>-</button>
+        <h1>
+            { count }
+        </h1>
     </div>
   );
 }

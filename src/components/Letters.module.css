@@ -1,0 +1,19 @@
+.letter {
+    background: black;
+    color: white;
+    line-height: 80px;
+    font-size: 32px;
+    text-align: center;
+    text-justify: center;
+    border-radius: 12px;
+    width: 60px;
+    height: 80px;
+    margin:4px;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+

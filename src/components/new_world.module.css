@@ -1,0 +1,7 @@
+.gameOver {
+    border: 2px dashed black;
+    border-radius: 4px;
+    text-align: center;
+    width: 100px;
+}
+

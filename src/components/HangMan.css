@@ -1,0 +1,67 @@
+:root {
+    --x: 10%;
+    --y: 10%;
+}
+
+.head {
+    position: absolute;
+    left: calc(var(--x) + 0%);
+    top: 50%;
+}
+
+.neck {
+    position: absolute;
+    left: calc(var(--x) + 2.5%);
+    top: 56%;
+    z-index: -2;
+}
+
+.corpus {
+    position: absolute;
+    left: calc(var(--x) + 1.4%);
+    top: 57%;
+}
+
+.right-arm {
+    position: absolute;
+    left: calc(var(--x) + 3.5%);
+    top: 58%;
+    z-index:-1;
+}
+
+.left-arm {
+    position: absolute;
+    left: calc(var(--x) + -1%);
+    top: 58%;
+    z-index: -1;
+}
+
+.right-hand {
+    position: absolute;
+    left: calc(var(--x) + 6.9%);
+    top: 61%;
+    z-index:-2;
+}
+
+
+.left-hand {
+    position: absolute;
+    left: calc(var(--x) + -10%);
+    top: 61%;
+    z-index:-2;
+}
+
+.right-leg {
+    position: absolute;
+    left: calc(var(--x) + -1%);
+    top: 58%;
+    z-index: -1;
+}
+
+
+.left-leg {
+    position: absolute;
+    left: calc(var(--x) + -1%);
+    top: 58%;
+    z-index: -1;
+}
