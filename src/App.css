@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.App:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 300px 300px 0 0;
+    border-color: transparent #4e4eff transparent transparent;
+    right: 0;
+    bottom: 0;
+    z-index: -4;
+    position: absolute;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

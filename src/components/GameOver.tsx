@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./new_world.module.css"
+import styles from "./GameOver.module.css";
 
 const newWord = () => {
   return (

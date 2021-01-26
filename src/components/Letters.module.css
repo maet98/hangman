@@ -1,5 +1,6 @@
 .letter {
-    background: black;
+    background: #676767;
+    opacity: 0.8;
     color: white;
     line-height: 80px;
     font-size: 32px;
@@ -9,6 +10,10 @@
     width: 60px;
     height: 80px;
     margin:4px;
+}
+
+.hidden {
+    color: black;
 }
 
 span {

@@ -1,67 +1,88 @@
 :root {
-    --x: 10%;
-    --y: 10%;
+    --x: 100px;
+    --y: 100px;
+}
+
+.bar {
+    position: absolute;
+    left: -200px;
+    top: 150px;
 }
 
 .head {
     position: absolute;
-    left: calc(var(--x) + 0%);
-    top: 50%;
+    left: 100px;
+    top: 200px;
 }
 
 .neck {
     position: absolute;
-    left: calc(var(--x) + 2.5%);
-    top: 56%;
+    left: 170px;
+    top: 390px;
     z-index: -2;
 }
 
 .corpus {
     position: absolute;
-    left: calc(var(--x) + 1.4%);
-    top: 57%;
+    left: 140px;
+    top: 430px;
 }
 
 .right-arm {
     position: absolute;
-    left: calc(var(--x) + 3.5%);
-    top: 58%;
+    left: 200px;
+    top: 430px;
     z-index:-1;
 }
 
 .left-arm {
     position: absolute;
-    left: calc(var(--x) + -1%);
-    top: 58%;
+    left: 60px;
+    top: 430px;
     z-index: -1;
 }
 
 .right-hand {
     position: absolute;
-    left: calc(var(--x) + 6.9%);
-    top: 61%;
+    left: 300px;
+    top: 530px;
     z-index:-2;
 }
 
 
 .left-hand {
     position: absolute;
-    left: calc(var(--x) + -10%);
-    top: 61%;
+    left: 55px;
+    top: 530px;
     z-index:-2;
 }
 
 .right-leg {
     position: absolute;
-    left: calc(var(--x) + -1%);
-    top: 58%;
+    left: 190px;
+    top: 550px;
     z-index: -1;
 }
 
 
 .left-leg {
     position: absolute;
-    left: calc(var(--x) + -1%);
-    top: 58%;
+    left: 110px;
+    top: 550px;
     z-index: -1;
+}
+
+.right-foot {
+    position: absolute;
+    left: 230px;
+    top: 710px;
+    z-index: -2;
+}
+
+
+.left-foot {
+    position: absolute;
+    left: 70px;
+    top: 710px;
+    z-index: -2;
 }

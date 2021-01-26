@@ -1,22 +1,29 @@
 import React from 'react';
 import './App.css';
-import NewWord from "./components/new_word"
-import Letter from "./components/Letters"
+import Word from "./components/Word"
 import HangMan from "./components/HangMan"
 
 function App() {
     const [count,setCount] = React.useState(0);
 
+    const won = () => {
+        alert("You won");
+    }
+
+    const increase = () => {
+        if(count+1 == 11) {
+            alert("You lost")
+        }
+        else {
+            setCount(count + 1)
+        }
+    }
+
+
   return (
-    <div className="App">
-        <NewWord />
-        <Letter letter={'a'} />
+      <div className="App">
+        <Word won={won} increase={increase} word={"HOLAMIMA"} />
         <HangMan mistakes={count} />
-        <button onClick={() => setCount(count+1)}>+</button>
-        <button onClick={() => setCount(Math.max(0,count-1))}>-</button>
-        <h1>
-            { count }
-        </h1>
     </div>
   );
 }

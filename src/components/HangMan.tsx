@@ -10,13 +10,19 @@ import RightLeg from "../imgs/right-leg.png";
 import LeftLeg from "../imgs/left-leg.png";
 import RightFoot from "../imgs/right-foot.png";
 import LeftFoot from "../imgs/left-foot.png";
+import Bar from "../imgs/bar.png";
 import "./HangMan.css";
 
 interface props {
     mistakes: number;
 }
 
-const order = [{
+const order = [
+    {
+        name:'bar',
+        src: Bar
+    },
+    {
         name: 'head' ,
         src: Head
     },
@@ -49,7 +55,7 @@ const HangMan: React.FC<props> = (props: props) => {
       <div>
         {
             order.map((value, index) => {
-                if(index < props.mistakes) {
+                if(index-1 < props.mistakes) {
                     return <img className={value.name} key={index} src={value.src} />
                 } else {
                     return null;
